@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>REST Countries API</title>
+    <link rel="stylesheet" href="./HomeStyles.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&family=Overpass:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h2>Where in the world</h2>
+        <button>
+            <!-- <i class="fa-solid fa-moon"></i> -->
+            Dark Mode
+        </button>
+    </header>
+    <div class="filter-container">
+        <input placeholder="Search for a country" id="search"></input>
+        <select id="region-selector">
+            <option selected hidden>Filter by Region</option>
+            <option>Africa</option>
+            <option>America</option>
+            <option>Asia</option>
+            <option>Europe</option>
+            <option>Oceania</option>
+        </select>
+    </div>
+
+    <div class="countries-container"></div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
